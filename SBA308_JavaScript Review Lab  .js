@@ -42,21 +42,41 @@
 
 //  ************************************************************************************************
 
-// B.strings
-// question 1
- let firstVariable;
- // question 2
-firstVariable = "hello world";
-// question 3
-firstVariable = 7;
-// question 4
-let secondVariable = firstVariable;
-// question 5
-secondVariable = "thank you per scholas"
-// question 6
-// he value of firstVariable still 7 ;
+// // B.strings
+// // question 1
+//  let firstVariable;
+//  // question 2
+// firstVariable = "hello world";
+// // question 3
+// firstVariable = 7;
+// // question 4
+// let secondVariable = firstVariable;
+// // question 5
+// secondVariable = "thank you per scholas"
+// // question 6
+// // he value of firstVariable still 7 ;
 
-// question 7
-let myname = "abdou"
-console.log(`hello,my name is ${myname}` );
+// // question 7
+// let myname = "abdou"
+// console.log(`hello,my name is ${myname}` );
 
+//********************************************************************** */
+
+//BOOLEANS
+
+const a = 4;
+const b = 53;
+const c = 57;
+const d = 16;
+const e = "Kevin";
+
+console.log(a < b);
+console.log(c > d);
+console.log("Name" === "Name");
+console.log(true || false);
+console.log((false && false && false && false && false) || true);
+console.log(false === false);
+console.log(e == "Kevin");
+console.log(a + b == c);
+console.log(a * a == d);
+console.log(48 == "48");
