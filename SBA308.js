@@ -529,3 +529,34 @@
 // oldAndLoud(user);
 // console.log(user);
 
+/////////////Cat Combinator
+
+///////////////1. Mama cat
+
+const cat1 = {
+  name: "katy",
+  breed: "ragdol",
+  age: 1,
+};
+console.log(cat1.age);
+console.log(cat1.breed);
+
+// /    2. Papa cat
+
+const cat2 = {
+  name: "bobie",
+  breed: "bengal",
+  age: 2,
+};
+
+/////    3.combine cats
+
+function combineCats(mama, papa) {
+  console.log(mama);
+  console.log(papa);
+}
+combineCats(cat1, cat2);
+
+
+
+
