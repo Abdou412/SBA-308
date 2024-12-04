@@ -379,4 +379,153 @@
 //   }
 // }
 
-// console.log(isVowel("p"));
+// console.log(isVowel("e"));
+
+//   E. getTwoLengths
+
+// function nameindex(name1, name2) {
+//   return [name1.length, name2.length];
+// }
+// console.log(nameindex("sidi", "abdarrahaman"));
+
+/////////F. getMultipleLengths
+
+// function wold_convertor(word) {
+//   const array_of_numbers = [];
+//   for (let i = 0; i < word.length; i++) {
+//     array_of_numbers.push(word[i].length);
+//   }
+//   return array_of_numbers;
+// }
+
+// console.log(
+//   wold_convertor(["abdou", "sidi", "abdarrahman", "limame", "dah_bady"])
+// );
+
+//
+// function maxOfThree(numbre1, numbre2, numbre3) {
+//   let largest = numbre1;
+
+//   if (numbre2 > largest) {
+//     largest = numbre2;
+//   }
+//   if (numbre3 > largest) {
+//     largest = numbre3;
+//   }
+
+//   return largest;
+// }
+
+// console.log(maxOfThree(70, 42, 19));
+// console.log(maxOfThree(70, 70, 70));
+// console.log(maxOfThree(42, 42, 70));
+// console.log(maxOfThree(21, 17, 17));
+
+///////////////////H. printLongestWord
+
+// function printLongestWord(words) {
+//   let longestWord = "";
+
+//   for (let i = 0; i < words.length; i++) {
+//     if (words[i].length > longestWord.length) {
+//       longestWord = words[i];
+//     }
+//   }
+//   console.log("the longest name in this list is ");
+//   return longestWord;
+// }
+
+// console.log(
+//   printLongestWord(["abdou", "keboud", "beyadefffffffffffff", "bradafromadamada"])
+// );
+
+//
+
+//
+////////////////////////////OBJECTS
+/////////A. Make a user object
+const user = {
+  name: "abdou",
+  email: "abdouuuuuu@Gmail.com",
+  age: 30,
+  purchased: [],
+};
+/////////////////////////////////////
+
+///////////////////////////////////////////
+
+//////////B. Update the user
+//1
+user.email = "aasdfsds@gmail.com";
+
+//2.
+user.age++;
+
+////////////  D. Shopaholic!
+// 1.
+user.purchased.push("carbohydrates");
+
+// 2.
+user.purchased.push("peace of mind");
+//  3.
+user.purchased.push("Merino jodhpurs");
+//   4.
+console.log(user.purchased[2]);
+
+////////////////E. Object-within-object
+
+//// 1.
+user.friend = {
+  name: "alxis",
+  age: 30,
+  location: "31 alistreet,Fl,USA",
+  purchase: [],
+};
+//// 2.
+
+console.log(user.friend.name);
+
+/// 3.
+console.log(user.friend.location);
+
+// 4.
+user.friend.age = 55;
+/// 5.
+user.friend.purchase.push("The One Ring");
+
+// 6.
+user.friend.purchase.push("A latte");
+console.log(user.friend.purchase[1]);
+
+////////////////////F. Loops
+
+// 1.
+
+for (i = 0; i <= user.purchased.length; i++) {
+  console.log(user.purchased[i]);
+}
+
+// 2.
+
+for (i = 0; i <= user.friend.purchase.length; i++) {
+  console.log(user.friend.purchase[i]);
+}
+
+/////////// G. Functions can operate on objects
+
+// 1. .2 .3
+
+function updateUser() {
+  user.age++;
+  user.name = user.name.toUpperCase();
+}
+updateUser(user);
+console.log(user);
+///// 2
+function oldAndLoud(person) {
+  person.age++;
+  person.name = person.name.toUpperCase();
+}
+oldAndLoud(user);
+console.log(user);
+
