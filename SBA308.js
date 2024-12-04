@@ -442,90 +442,90 @@
 //
 
 //
-////////////////////////////OBJECTS
-/////////A. Make a user object
-const user = {
-  name: "abdou",
-  email: "abdouuuuuu@Gmail.com",
-  age: 30,
-  purchased: [],
-};
-/////////////////////////////////////
+// ////////////////////////////OBJECTS
+// /////////A. Make a user object
+// const user = {
+//   name: "abdou",
+//   email: "abdouuuuuu@Gmail.com",
+//   age: 30,
+//   purchased: [],
+// };
+// /////////////////////////////////////
 
-///////////////////////////////////////////
+// ///////////////////////////////////////////
 
-//////////B. Update the user
-//1
-user.email = "aasdfsds@gmail.com";
+// //////////B. Update the user
+// //1
+// user.email = "aasdfsds@gmail.com";
 
-//2.
-user.age++;
+// //2.
+// user.age++;
 
-////////////  D. Shopaholic!
-// 1.
-user.purchased.push("carbohydrates");
+// ////////////  D. Shopaholic!
+// // 1.
+// user.purchased.push("carbohydrates");
 
-// 2.
-user.purchased.push("peace of mind");
-//  3.
-user.purchased.push("Merino jodhpurs");
-//   4.
-console.log(user.purchased[2]);
+// // 2.
+// user.purchased.push("peace of mind");
+// //  3.
+// user.purchased.push("Merino jodhpurs");
+// //   4.
+// console.log(user.purchased[2]);
 
-////////////////E. Object-within-object
+// ////////////////E. Object-within-object
 
-//// 1.
-user.friend = {
-  name: "alxis",
-  age: 30,
-  location: "31 alistreet,Fl,USA",
-  purchase: [],
-};
-//// 2.
+// //// 1.
+// user.friend = {
+//   name: "alxis",
+//   age: 30,
+//   location: "31 alistreet,Fl,USA",
+//   purchase: [],
+// };
+// //// 2.
 
-console.log(user.friend.name);
+// console.log(user.friend.name);
 
-/// 3.
-console.log(user.friend.location);
+// /// 3.
+// console.log(user.friend.location);
 
-// 4.
-user.friend.age = 55;
-/// 5.
-user.friend.purchase.push("The One Ring");
+// // 4.
+// user.friend.age = 55;
+// /// 5.
+// user.friend.purchase.push("The One Ring");
 
-// 6.
-user.friend.purchase.push("A latte");
-console.log(user.friend.purchase[1]);
+// // 6.
+// user.friend.purchase.push("A latte");
+// console.log(user.friend.purchase[1]);
 
-////////////////////F. Loops
+// ////////////////////F. Loops
 
-// 1.
+// // 1.
 
-for (i = 0; i <= user.purchased.length; i++) {
-  console.log(user.purchased[i]);
-}
+// for (i = 0; i <= user.purchased.length; i++) {
+//   console.log(user.purchased[i]);
+// }
 
-// 2.
+// // 2.
 
-for (i = 0; i <= user.friend.purchase.length; i++) {
-  console.log(user.friend.purchase[i]);
-}
+// for (i = 0; i <= user.friend.purchase.length; i++) {
+//   console.log(user.friend.purchase[i]);
+// }
 
-/////////// G. Functions can operate on objects
+// /////////// G. Functions can operate on objects
 
-// 1. .2 .3
+// // 1. .2 .3
 
-function updateUser() {
-  user.age++;
-  user.name = user.name.toUpperCase();
-}
-updateUser(user);
-console.log(user);
-///// 2
-function oldAndLoud(person) {
-  person.age++;
-  person.name = person.name.toUpperCase();
-}
-oldAndLoud(user);
-console.log(user);
+// function updateUser() {
+//   user.age++;
+//   user.name = user.name.toUpperCase();
+// }
+// updateUser(user);
+// console.log(user);
+// ///// 2
+// function oldAndLoud(person) {
+//   person.age++;
+//   person.name = person.name.toUpperCase();
+// }
+// oldAndLoud(user);
+// console.log(user);
 
