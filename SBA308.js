@@ -165,10 +165,218 @@
 
 // question 2
 
-let bank_account =0;
-for (let i = 1; i <= 100; i++) {
-  (bank_account = bank_account+2*i) ;
- 
+// let bank_account =0;
+// for (let i = 1; i <= 100; i++) {
+//   (bank_account = bank_account+2*i) ;
 
-}
- console.log("YOUR BANK BALANCE IS " + bank_account);
+// }
+//  console.log("YOUR BANK BALANCE IS " + bank_account);
+
+//******************************************************
+//  ********************/III. Arrays & Control flow****************
+
+// What are the things in an array called?
+// elements
+//Do Arrays guarantee those things will be in order?
+// no
+// What real-life thing could you model with an array?
+// my shoping cart, my grades, my list of freinds...
+
+//B. Easy Does It
+// let myarray = [
+//   "The best of people are those that bring the most benefit to others.prophet Mohamed",
+//   " God does not play dice with the universe.Albert Einstein",
+//   "Take account of yourselves before you are taken to accountUmar ibn al-Khattab",
+// ];
+
+//C. Accessing elements
+
+// question1
+// Given the following array const randomThings = [1, 10, "Hello", true]
+//How do you access the 1st element in the array?
+// To access the 1st element in the array randomThings, i can use the index 0
+// like this randomthings [0]
+
+//
+
+// const randomThings = [1, 10, "Hello", true];
+// randomThings[2] = "world";
+
+//
+// question 3
+//heck the value of the array to make sure it updated the array. How? Why, yes! console.log();
+// const randomThings = [1, 10, "Hello", true];
+// randomThings[2] = "world";
+// console.log(randomThings);
+
+// E. Mix It Up
+
+//
+// const myArray = [5, 10, 500, 20];
+
+// // question 1
+
+// myArray.push("Aegeon");
+// console.log(myArray);
+// // question 2
+// myArray.shift();
+// console.log(myArray);
+// // question 3
+
+// myArray.unshift("bob Marley");
+// console.log(myArray);
+// // question 4
+// myArray.pop();
+// console.log(myArray);
+
+// // question 5
+// myArray.reverse();
+// console.log(myArray);
+// //  yes i did mutate the array since i have used those methodes like (pop, reverse, shift, unshift...)
+// // mutate means that modifie the the array itself it becomes like the aaray has undergone to a mutation.
+// // yes .reverse returns the original array but reversed.
+
+//F. Biggie Smalls
+// let number_to_compare_to100 = 67;
+// if (number_to_compare_to100 < 100) {
+//   console.log("little number");
+// } else{
+//   console.log("big number");
+// }
+
+//
+//G. Monkey in the Middle
+// let number = 7;
+// if (number < 5) {
+//   console.log("little number");
+// } else if (number > 10) {
+//   console.log("big number");
+// } else {
+//   console.log("monkey");
+// }
+
+//
+//
+
+//H. What's in Your Closet?
+
+// const kristynsCloset = [
+//   "left shoe",
+//   "cowboy boots",
+//   "right sock",
+//   "Per Scholas hoodie",
+//   "green pants",
+//   "yellow knit hat",
+//   "marshmallow peeps",
+// ];
+
+// // Thom's closet is more complicated. Check out this nested data structure!!
+// const thomsCloset = [
+//   [
+//     // These are Thom's shirts
+//     "grey button-up",
+//     "dark grey button-up",
+//     "light blue button-up",
+//     "blue button-up",
+//   ],
+//   [
+//     // These are Thom's pants
+//     "grey jeans",
+//     "jeans",
+//     "PJs",
+//   ],
+//   [
+//     // Thom's accessories
+//     "wool mittens",
+//     "wool scarf",
+//     "raybans",
+//   ],
+// ];
+
+// // 1.What's Kristyn wearing today?
+
+// console.log("Kristyn is rocking that  " + kristynsCloset[2] + " today");
+// //
+
+// // 2.
+
+// kristynsCloset.splice(kristynsCloset.length - 1, 0, "raybans");
+// console.log(kristynsCloset);
+// //
+// // 3.
+
+// kristynsCloset[5] = "stained knit hat";
+// console.log(kristynsCloset);
+
+// //
+
+// // 4.
+// console.log(thomsCloset[0][0]);
+
+// // 5.
+// console.log(thomsCloset[1][0]);
+
+// // 6.
+// console.log(thomsCloset[2][0]);
+
+// 7.
+// console.log(
+//   "Thom is looking handsome in" +
+//     thomsCloset[0][3] +
+//     " , " +
+//     thomsCloset[1][2] +
+//     " , " +
+//     thomsCloset[2][0]
+// );
+
+// 8.
+
+// thomsCloset[1][2] = "Footie Pajamas";
+// console.log(thomsCloset);
+
+// **********************   IV. Functions
+
+//A. printGreeting
+// function printGreeting(name) {
+//   console.log(" Hello there, " + name );
+// }
+
+// printGreeting("Slimer")
+
+//B. printCool
+//
+
+// function printcool(name) {
+//   console.log(name + " is cool ");
+// }
+
+// printcool("Leo Messi");
+
+//
+
+//   C. calculateCube
+
+// function calculatecube(side_of_the_cube) {
+//   the_cube_volume = side_of_the_cube * side_of_the_cube * side_of_the_cube;
+//   console.log(the_cube_volume);
+// }
+
+// calculatecube(4);
+
+//  D. isVowel
+// function isVowel(vowel) {
+//   if (
+//     vowel == "a" ||
+//     vowel == "e" ||
+//     vowel == "i" ||
+//     vowel == "o" ||
+//     vowel == "u" ||
+//     vowel == "y"
+//   ) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(isVowel("p"));
